@@ -9,7 +9,7 @@ Domain::Register::TK - an interface to Dot TK's Partner API Program
 
 =cut
 
-our $VERSION = '2.00';
+our $VERSION = '2.00_01';
 
 =head1 VERSION
 
