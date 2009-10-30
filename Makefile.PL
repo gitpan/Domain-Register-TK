@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'Domain::Register::TK',
-    AUTHOR              => 'Dominic Thoreau <dominic@dot.tk>',
+    AUTHOR              => 'Dot TK Limited <partners@dot.tk>';
     VERSION_FROM        => 'lib/Domain/Register/TK.pm',
     ABSTRACT_FROM       => 'lib/Domain/Register/TK.pm',
     ($ExtUtils::MakeMaker::VERSION >= 6.3002

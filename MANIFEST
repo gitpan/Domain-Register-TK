@@ -2,6 +2,7 @@ Changes
 MANIFEST
 Makefile.PL
 README
+META.yml
 lib/Domain/Register/TK.pm
 t/00-load.t
 t/pod-coverage.t

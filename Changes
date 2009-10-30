@@ -1,6 +1,7 @@
 Revision history for Domain::Register::TK
 
-2.00_00 11-August-2009
+2.00    11-August-2009
         First version as a Perl module, released to API version 2.00
-2.00_01 28-August-2009
-        No substantial change, just intended to update user name in CPAN page  
+2.0.1   30-October-2009
+        META.yml altered to reflect module requirements
+
