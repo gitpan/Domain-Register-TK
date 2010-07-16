@@ -1,12 +1,12 @@
 Domain-Register-TK
 
 Domain::Register::TK allows developers to create and maintain domains within 
-the .TK namespace using Dot TK's partner program API, without having to know 
+the .TK namespace using Dot TK's reseller program API, without having to know 
 the details of how the API program works. Domains can be checked (with price 
 provided in local currency) and updated, including using URL forwarding 
 services, or manipulating nameserver references.
 
-More information about the Dot TK Partner API program can be found at 
+More information about the Dot TK Reseller API program can be found at 
 http://www.dot.tk/en/pageE12.html
 
 DEPENDENCIES

@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 # A simple program to show home some things work
-# (C) 2009 Dot TK Ltd
+# (C) 2010 Dot TK Ltd
 
 use Domain::Register::TK;
 use Data::Dumper;
@@ -24,7 +24,7 @@ print "Ping was successful.\n";
 
 # Tell the object about your identity with the Dot TK servers.
 # Note:if you want this to actually run, you need to change these values.
-$api->credentials('email@tk_partner.com', 'partner_passsword');
+$api->credentials('email@tk_reseller.com', 'reseller_passsword');
 
 my @domains_to_check = qw{ DOT.TK TESTDOMAIN-0001.TK DONALD-DUCK.TK};
 

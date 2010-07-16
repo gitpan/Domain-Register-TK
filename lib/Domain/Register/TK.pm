@@ -5,15 +5,15 @@ use warnings;
 
 =head1 NAME
 
-Domain::Register::TK - an interface to Dot TK's Partner API Program
+Domain::Register::TK - an interface to Dot TK's Reseller API Program
 
 =cut
 
-our $VERSION = '2.0.1';
+our $VERSION = '2.0.3';
 
 =head1 VERSION
 
-Version 2.0.1
+Version 2.0.3
 
 =cut
 
@@ -21,12 +21,12 @@ use LWP::UserAgent;
 use XML::Simple;
 
 # if you're browsing this, please note: you also need a library to allow LWP to use SSL.
-#  Crypt::SSLeay or OpenSSL, for example
+# Crypt::SSLeay or OpenSSL, for example
 
 =head1 SYNOPSIS
 
 This module allows developers to create and maintain domains within the .TK 
-name space, using Dot TK's partner program API, without having to know the 
+name space, using Dot TK's reseller program API, without having to know the 
 details of how the API program works.  Domains can be checked (with price 
 provided in local currency) and updated, including using URL forwarding 
 services, or manipulating nameserver references
@@ -35,8 +35,8 @@ services, or manipulating nameserver references
 
 Dot TK has an extensive Application Programming Interface (API) that allows 
 you to administer your domains simply and effectively. Designed for large 
-portfolio partners, the Dot TK API will allow you to automate functions and
-reduce the time needed to manage your Dot TK Partner account.
+portfolio resellers, the Dot TK API will allow you to automate functions and
+reduce the time needed to manage your Dot TK Reseller account.
 
 This version of the Dot TK API allows you to use the API as a Perl library 
 without needing to understand the complexities of the regular API. This 
@@ -69,7 +69,7 @@ supplied.
 =head2 Setting Up
 
 Simply create an object from the library, and pass the email address and 
-password of your partner account to it.
+password of your reseller account to it.
 
  use Domain::Register::TK;
  my $api_object = Domain::Register::TK->new();
@@ -617,7 +617,7 @@ Parameter: (compulsory) C<DOMAIN>
 
 Possible response:
 
-Depending on the relation between Partner and Domain, there can be three different types of output:
+Depending on the relation between Reseller and Domain, there can be three different types of output:
 
 I<If the domain is available for registration>
 
@@ -666,7 +666,7 @@ I<If the domain is available for registration>
           'domaintype' => 'PAID'
         };
 
-I<If the domain is registered, but not part of the domain portfolio of the partner that uses this query>
+I<If the domain is registered, but not part of the domain portfolio of the reseller that uses this query>
 
  $result_code = {
           'whois_info' => {
@@ -701,11 +701,11 @@ I<If the domain is registered, but not part of the domain portfolio of the partn
           'expirationdate' => '99999999'
         };
 
-I<If the domain is registered and is part of the domain portfolio of the partner that uses this query>
+I<If the domain is registered and is part of the domain portfolio of the reseller that uses this query>
 
  $result_code = {
           'whois_info' => {
-                          'reg_name' => 'Dot TK Partner',
+                          'reg_name' => 'Dot TK Reseller',
                           'reg_address' => '8 Berwick Street',
                           'reg_zipcode' => 'W1F 0PH',
                           'reg_countrycode' => 'GB',
@@ -951,7 +951,7 @@ sub _get_url {
 
 =head1 AUTHOR
 
-Dot TK Partner API Program C<< <partnerapi at dot.tk> >>
+Dot TK Reseller API Program C<< <partnerapi at dot.tk> >>
 
 Please report any bugs or feature requests to C<bug-domain-register-tk at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Domain-Register-TK>.  
@@ -986,7 +986,7 @@ L<http://search.cpan.org/dist/Domain-Register-TK/>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2009 Dot TK Ltd. All Rights Reserved. This module is free software; you can redistribute it
+Copyright (c) 2010 Dot TK Ltd. All Rights Reserved. This module is free software; you can redistribute it
 and/or modify it under the terms of either:  a) the GNU General Public License as published by the Free
 Software Foundation; either version 1, or (at your option) any later version, or b) the "Artistic License",
 that is, the same terms as Perl itself.

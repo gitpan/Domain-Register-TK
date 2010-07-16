@@ -1,5 +1,5 @@
 --- 
-abstract: "An interface to Dot TK's Partner API Program "
+abstract: "An interface to Dot TK's Reseller API Program "
 author: 
   - Dot TK Limited <dottk@cpan.org>
 license: ~
@@ -17,10 +17,10 @@ build_requires:
 provides: 
   Domain::Register::TK: 
     file: lib/Domain/Register/TK.pm
-    version: 2.00_02
+    version: 2.0.3
 resources: 
   CPANForum: http://www.cpanforum.com/dist/Domain-Register-TK
-  CPANTesters: http://cpantesters.perl.org/show/Domain-Register-TK.html#Domain-Register-TK-2.0_01
-  CPANTools: http://search.cpan.org/tools/Domain-Register-TK-2.0_01
+  CPANTesters: http://cpantesters.perl.org/show/Domain-Register-TK.html#Domain-Register-TK-2.0.3
+  CPANTools: http://search.cpan.org/tools/Domain-Register-TK-2.0.3
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Domain-Register-TK
-version: 2.0_02
+version: 2.0.3
