@@ -9,11 +9,11 @@ Domain::Register::TK - an interface to Dot TK's Reseller API Program
 
 =cut
 
-our $VERSION = '2.0.3';
+our $VERSION = '2.1';
 
 =head1 VERSION
 
-Version 2.0.3
+Version 2.1
 
 =cut
 

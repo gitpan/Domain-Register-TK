@@ -17,10 +17,10 @@ build_requires:
 provides: 
   Domain::Register::TK: 
     file: lib/Domain/Register/TK.pm
-    version: 2.0.3
+    version: 2.1
 resources: 
   CPANForum: http://www.cpanforum.com/dist/Domain-Register-TK
-  CPANTesters: http://cpantesters.perl.org/show/Domain-Register-TK.html#Domain-Register-TK-2.0.3
-  CPANTools: http://search.cpan.org/tools/Domain-Register-TK-2.0.3
+  CPANTesters: http://cpantesters.perl.org/show/Domain-Register-TK.html#Domain-Register-TK-2.1
+  CPANTools: http://search.cpan.org/tools/Domain-Register-TK-2.1
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Domain-Register-TK
-version: 2.0.3
+version: 2.1
